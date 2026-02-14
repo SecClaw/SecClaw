@@ -1,0 +1,13 @@
+{
+    "name": "secclaw-monorepo",
+    "version": "0.1.0",
+    "private": true,
+    "workspaces": [
+      "packages/*",
+      "apps/*",
+      "blockchain"
+    ],
+    "scripts": {
+      "core:update": "git subtree pull --prefix packages/core openclaw main --squash"
+    }
+  }
